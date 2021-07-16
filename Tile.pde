@@ -7,5 +7,9 @@ public class Tile
   
   private boolean isDestroyed;
   
-  
+  public Tile()
+  {
+    xPos = 0;
+    yPos = 0;
+  }
 }
