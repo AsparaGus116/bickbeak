@@ -1,34 +1,8 @@
-color grey = color(55, 55, 55);
-color green = color(0, 220, 0);
-
-Paddle p;
-Ball b;
-
-void setup()
-{
-  size(800, 600);
-  frameRate(60);
-  background(grey);
-  surface.setResizable(true);
-  b = new Ball(200, 200, 3, -3);
-  p = new Paddle();
-}
-
-void draw()
-{
-  background(grey);
-  p.drawPaddle();
-  b.drawBall();
-
-  if (b.hittingSides())
-  {
-    b.bounceX();
-  }
-  if (b.hittingRoof())
-  {
-    b.bounceY();
-  }
-
+public int distance = 8;
+/*
+void keyPressed()
+{  
+  //a + d
   if (keyPressed)
   {
     if (key == 'a')
@@ -77,3 +51,4 @@ void draw()
     }
   }
 }
+*/
